@@ -17,7 +17,7 @@ void Edge::print(){
         next->print();
 }
 
-Edge::~Edge()
-{
-    //dtor
+Edge::~Edge(){
+    if(next)
+        delete next;
 }

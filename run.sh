@@ -1,11 +1,13 @@
 #!/bin/bash
 
-echo Criando executável
+#echo Criando executável
 
-make clean
-make
+make clean > garbage.txt
+make > garbage.txt
 
-echo Executando
+rm garbage.txt
+
+#echo Executando
 
 ./bin/Program < in.txt
 

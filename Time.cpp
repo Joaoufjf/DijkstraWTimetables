@@ -4,6 +4,7 @@ Time::Time(int hour)
 {
     time = (hour / 100) * 60;
     time += hour % 100;
+//    cout << "Time " << hour << " Hour " << (hour / 100) * 60 << " Minutes " << (hour % 100) << " New time = " << time << endl;
 }
 
 void Time::print(){
